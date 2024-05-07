@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Access and Properties</title>
+</head>
+<body>
+    <!-- Task 1: Program using "this" keyword to make button disappear -->
+    <button onclick="this.style.display = 'none'">Click to Disappear</button><br><br>
+
+    <!-- Task 2: Invoking a function using call() and apply(), and spotting the difference -->
+    <script>
+        function greet(name) {
+            console.log('Hello, ' + name);
+            console.log('This context:', this);
+        }
+
+        // Using call()
+        greet.call(window, 'Alice'); // Hello, Alice
+        // Using apply()
+        greet.apply(window, ['Bob']); // Hello, Bob
+
+        // Difference: 
+        // The primary difference between call() and apply() is in how arguments are passed to the function. 
+        // With call(), arguments are passed as comma-separated values after the context object. 
+        // With apply(), arguments are passed as an array.
+    </script>
+
+    <!-- Task 3: Program for a counter -->
+    <button id="countButton">Count</button>
+    <p id="counterDisplay">0</p>
+    <script>
+        let counter = 0;
+        document.getElementById('countButton').onclick = function() {
+            counter++;
+            document.getElementById('counterDisplay').innerText = counter;
+        };
+    </script>
+
+    <!-- Task 4: Counter with getter and setter accessors -->
+    <script>
+        let counterObj = {
+            _count: 0,
+            get count() {
+                return this._count;
+            },
+            set count(value) {
+                this._count = value;
+                document.getElementById('counterDisplay').innerText = this._count;
+            }
+        };
+
+        document.getElementById('countButton').onclick = function() {
+            counterObj.count++;
+        };
+    </script>
+
+    <!-- Task 5: Adding properties to an existing function using object prototypes -->
+    <script>
+        function Person(name) {
+            this.name = name;
+        }
+
+        // Adding properties using prototypes
+        Person.prototype.age = 30;
+        Person.prototype.gender = 'Male';
+
+        let person1 = new Person('Alice');
+        console.log(person1.age); // Output: 30
+        console.log(person1.gender); // Output: Male
+    </script>
+</body>
+</html>

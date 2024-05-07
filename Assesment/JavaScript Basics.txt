@@ -1,0 +1,40 @@
+1. Single line comment
+/*
+   Multiline comment
+*/
+
+2. Array of fruits
+let fruits = ['Apple', 'Orange', 'Banana', 'Grapes'];
+
+// Function to sort fruits in descending order
+function sortFruits() {
+    fruits.sort().reverse();
+    console.log(fruits);
+}
+
+3. Program with FOR/IN loop
+let person = {
+    firstname: 'John',
+    lastname: 'Doe'
+};
+
+for (let key in person) {
+    console.log(key + ': ' + person[key]);
+}
+
+4. Accessing properties of the person object
+console.log(person.firstname);
+console.log(person['lastname']);
+
+5. Variable hoisting
+console.log(myVar); // Output: undefined
+var myVar = 10;
+
+6. Strict mode
+'use strict';
+try {
+    someVar = 20; // Throws error because someVar is not declared
+} catch (error) {
+    console.error(error.message);
+}
+

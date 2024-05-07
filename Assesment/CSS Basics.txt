@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics</title>
+    <style>
+        /* 1. CSS comments */
+        /* This is a CSS comment */
+
+        /* 2. Background color and image */
+        body {
+            background-color: #f0f0f0; /* Light gray background */
+            background-image: url('background.jpg'); /* Image as background */
+            background-size: cover; /* Image covers the entire background */
+            background-attachment: fixed; /* Image doesn't scroll with the page */
+        }
+
+        /* 3. Border styles */
+        .border-example {
+            border-top: 2px dashed red; /* Dashed red border on top */
+            border-right: 5px solid blue; /* Solid blue border on right */
+            border-bottom: 3px double green; /* Double green border on bottom */
+            border-left: 4px dotted orange; /* Dotted orange border on left */
+        }
+
+        /* 4. Height and width */
+        .sized-element {
+            width: 50%; /* 50% width of the parent container */
+            height: 200px; /* 200 pixels height */
+        }
+
+        /* 5. Font styles, size, family, color, and alignment */
+        .styled-text {
+            font-style: italic; /* Italic font style */
+            font-size: 20px; /* 20 pixels font size */
+            font-family: Arial, sans-serif; /* Font family */
+            color: #333; /* Dark gray text color */
+            text-align: center; /* Center text alignment */
+        }
+    </style>
+</head>
+<body>
+    <!-- 3. Border styles example -->
+    <div class="border-example">
+        This div has different border styles on each side.
+    </div>
+
+    <!-- 4. Height and width example -->
+    <div class="sized-element">
+        This div has specified height and width.
+    </div>
+
+    <!-- 5. Font styles example -->
+    <p class="styled-text">
+        This text has different font styles, size, family, color, and alignment.
+    </p>
+</body>
+</html>
+

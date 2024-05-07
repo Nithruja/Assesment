@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Elements</title>
+</head>
+<body>
+    <!-- 1. Web page with non-semantic elements <div> and <span> -->
+    <div>This is a non-semantic <code>&lt;div&gt;</code> element.</div>
+    <span>This is a non-semantic <code>&lt;span&gt;</code> element.</span>
+
+    <hr>
+
+    <!-- 2. Web page with semantic elements <form>, <table>, and <article> -->
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <table border="1">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+        </tr>
+    </table>
+
+    <article>
+        <h1>Article Title</h1>
+        <p>This is a semantic <code>&lt;article&gt;</code> element.</p>
+    </article>
+
+    <hr>
+
+    <!-- 3. Web page with all HTML5 semantic tags -->
+    <header>
+        <h1>Header</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Section 1</h2>
+        <p>This is a <code>&lt;section&gt;</code> element.</p>
+    </section>
+
+    <aside>
+        <h2>Aside</h2>
+        <p>This is an <code>&lt;aside&gt;</code> element.</p>
+    </aside>
+
+    <article>
+        <h2>Article</h2>
+        <p>This is an <code>&lt;article&gt;</code> element.</p>
+    </article>
+
+    <footer>
+        <p>This is a <code>&lt;footer&gt;</code> element.</p>
+    </footer>
+
+    <hgroup>
+        <h1>Main Heading</h1>
+        <h2>Subheading</h2>
+    </hgroup>
+
+    <figure>
+        <img src="image.jpg" alt="Image">
+        <figcaption>This is a <code>&lt;figcaption&gt;</code> element.</figcaption>
+    </figure>
+
+    <mark>This is a <code>&lt;mark&gt;</code> element.</mark>
+
+    <time datetime="2022-05-01">May 1, 2022</time>
+</body>
+</html>
+

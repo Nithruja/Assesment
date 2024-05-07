@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+    <script>
+        // 1. Event listener to display current date and time
+        function displayDateTime() {
+            let currentDate = new Date().toLocaleDateString();
+            let currentTime = new Date().toLocaleTimeString();
+            alert('Current Date: ' + currentDate + '\nCurrent Time: ' + currentTime);
+        }
+        
+        // 2. JavaScript validation
+        function validateForm() {
+            let textBoxValue = document.getElementById('textBox').value;
+            if (textBoxValue === '') {
+                alert('Textbox cannot be empty!');
+                return false;
+            }
+            return true;
+        }
+
+        // 4. Functions to set, get, and check cookies
+        function setCookie(name, value, days) {
+            let expires = '';
+            if (days) {
+                let date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = '; expires=' + date.toUTCString();
+            }
+            document.cookie = name + '=' + value + expires + '; path=/';
+        }
+
+        function getCookie(name) {
+            let nameEQ = name + '=';
+            let cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                let cookie = cookies[i];
+                while (cookie.charAt(0) === ' ') {
+                    cookie = cookie.substring(1, cookie.length);
+                }
+                if (cookie.indexOf(nameEQ) === 0) {
+                    return cookie.substring(nameEQ.length, cookie.length);
+                }
+            }
+            return null;
+        }
+
+        function checkCookie() {
+            let user = getCookie('username');
+            if (user !== null && user !== '') {
+                alert('Welcome back, ' + user + '!');
+            } else {
+                user = prompt('Please enter your name:', '');
+                if (user !== '' && user !== null) {
+                    setCookie('username', user, 365);
+                }
+            }
+        }
+
+        // 5. Create a JSON object and access it using dot notation
+        let person = {
+            name: 'John',
+            age: 30,
+            city: 'New York'
+        };
+
+        console.log(person.name); // Output: John
+        console.log(person.age); // Output: 30
+        console.log(person.city); // Output: New York
+    </script>
+</head>
+<body>
+    <!-- 1. Button with event listener to display current date and time -->
+    <button onclick="displayDateTime()">Display Date & Time</button>
+    
+    <!-- 2. JavaScript validation -->
+    <form onsubmit="return validateForm()">
+        <input type="text" id="textBox" placeholder="Enter text">
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- 4. Check cookie -->
+    <script>
+        checkCookie();
+    </script>
+</body>
+</html>
+
+
+
+

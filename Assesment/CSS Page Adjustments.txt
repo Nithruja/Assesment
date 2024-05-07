@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Page Adjustments</title>
+    <style>
+        /* 1. Black border for table with color change on hover */
+        table {
+            border: 1px solid black;
+        }
+        table:hover {
+            background-color: lightgray;
+        }
+
+        /* 2. Different visibility and display properties */
+        .hidden-element {
+            visibility: hidden;
+        }
+        .visible-element {
+            visibility: visible;
+        }
+        .collapsed-element {
+            visibility: collapse;
+        }
+
+        .none-element {
+            display: none;
+        }
+        .inline-element {
+            display: inline;
+        }
+        .block-element {
+            display: block;
+        }
+        .contents-element {
+            display: contents;
+        }
+        .list-item-element {
+            display: list-item;
+        }
+
+        /* 3. Scroll to top and bottom with smooth behavior */
+        .scroll-links {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        /* 4. Padding and margin */
+        .padded-element {
+            padding: 20px;
+        }
+        .margined-element {
+            margin: 20px;
+        }
+
+        /* 5. Multiple background images with adjustable sizes */
+        .background-images {
+            background-image: url('image1.jpg'), url('image2.jpg');
+            background-size: auto, cover;
+            background-position: top left, center;
+            background-repeat: no-repeat, repeat-y;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. Table with black border -->
+    <table>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+        </tr>
+    </table>
+
+    <!-- 2. Visibility and Display -->
+    <div class="hidden-element">Hidden Element</div>
+    <div class="visible-element">Visible Element</div>
+    <div class="collapsed-element">Collapsed Element</div>
+
+    <div class="none-element">None Element</div>
+    <div class="inline-element">Inline Element</div>
+    <div class="block-element">Block Element</div>
+    <div class="contents-element">Contents Element</div>
+    <div class="list-item-element">List Item Element</div>
+
+    <!-- 3. Scroll to top and bottom links -->
+    <a class="scroll-links" href="#top">Click to go to top of page</a>
+    <a class="scroll-links" href="#bottom">Click to go to bottom of page</a>
+
+    <!-- 4. Padding and Margin -->
+    <div class="padded-element">Padded Element</div>
+    <div class="margined-element">Margined Element</div>
+
+    <!-- 5. Multiple Background Images -->
+    <div class="background-images" style="height: 200px; width: 400px;">
+        Multiple Background Images
+    </div>
+
+    <div id="top"></div> <!-- Anchor for top of page -->
+    <div id="bottom"></div> <!-- Anchor for bottom of page -->
+</body>
+</html>
+

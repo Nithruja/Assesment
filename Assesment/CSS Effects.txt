@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Effects</title>
+    <style>
+        /* 1. CSS shadow effects for image box */
+        .image-box {
+            width: 300px;
+            height: 200px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            transition: box-shadow 0.3s;
+        }
+        .image-box:hover {
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+            cursor: pointer;
+        }
+
+        /* 2. CSS animations */
+        .animation-example {
+            width: 100px;
+            height: 100px;
+            background-color: #f00;
+            animation-name: move;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+        }
+        @keyframes move {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(200px); }
+            100% { transform: translateX(0); }
+        }
+
+        /* 3. CSS positions */
+        .position-example {
+            width: 100px;
+            height: 100px;
+            background-color: #00f;
+            position: static;
+            /* position: relative; */
+            /* position: fixed; */
+            /* position: absolute; */
+            /* position: sticky; */
+            top: 50px;
+            left: 50px;
+        }
+
+        /* 4. Handling overflow */
+        .overflow-example {
+            width: 200px;
+            height: 100px;
+            overflow: scroll;
+        }
+
+        /* 5. Adding opacity to an image */
+        .opacity-example {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. Image box with shadow effect -->
+    <div class="image-box"></div><br><br>
+
+    <!-- 2. CSS animations -->
+    <div class="animation-example"></div><br><br>
+
+    <!-- 3. CSS positions -->
+    <div class="position-example"></div><br><br>
+
+    <!-- 4. Handling overflow -->
+    <div class="overflow-example">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Sed et risus nec urna viverra fermentum. Duis non commodo massa.
+    </div><br><br>
+
+    <!-- 5. Adding opacity to an image -->
+    <img class="opacity-example" src="image.jpg" alt="Image">
+</body>
+</html>
+

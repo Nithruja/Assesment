@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Basics HTML Page</title>
+    <style>
+        /* Pseudo-class example */
+        a:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- Heading -->
+    <h1>Main Heading</h1>
+
+    <!-- Paragraph -->
+    <p>This is a paragraph.</p>
+
+    <!-- Italic -->
+    <i>This text is italic.</i>
+
+    <!-- Bold -->
+    <b>This text is bold.</b>
+
+    <!-- Anchor -->
+    <a href="#section2">Go to Section 2</a>
+
+    <!-- Unordered List -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <!-- List Item -->
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <!-- Label -->
+    <label for="inputField">Input Field:</label>
+    <input type="text" id="inputField">
+
+    <!-- Blockquote -->
+    <blockquote>This is a blockquote.</blockquote>
+
+    <!-- Horizontal Rule -->
+    <hr>
+
+    <!-- Image -->
+    <img src="image.jpg" alt="Image">
+
+    <!-- Division -->
+    <div>
+        This is a division.
+        <span>This is a span inside a division.</span>
+    </div>
+
+    <!-- Span -->
+    <p>This is a <span>span</span>.</p>
+
+    <!-- Navigation to different section -->
+    <h2 id="section2">Section 2</h2>
+    <a href="#top">Back to Top</a>
+</body>
+</html>
+ 

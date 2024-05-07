@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+</head>
+<body>
+    <!-- Input Attributes -->
+    <form action="#" method="post">
+        <label for="text">Text:</label>
+        <input type="text" id="text" name="text" value="Text Value"><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" value="Password123"><br>
+
+        <label for="submit">Submit:</label>
+        <input type="submit" id="submit" name="submit"><br>
+
+        <label for="reset">Reset:</label>
+        <input type="reset" id="reset" name="reset"><br>
+
+        <label for="radio">Radio:</label>
+        <input type="radio" id="radio" name="radio" value="Radio Option 1"><br>
+
+        <label for="checkbox">Checkbox:</label>
+        <input type="checkbox" id="checkbox" name="checkbox" value="Checkbox Option 1"><br>
+
+        <button type="button">Button</button><br>
+    </form>
+
+    <!-- HTML5 Input Types -->
+    <label for="number">Number:</label>
+    <input type="number" id="number" name="number" min="1" max="10" value="5"><br>
+
+    <label for="range">Range:</label>
+    <input type="range" id="range" name="range" min="1" max="100" value="50"><br>
+
+    <label for="color">Color:</label>
+    <input type="color" id="color" name="color" value="#ff0000"><br>
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date"><br>
+
+    <label for="file">File:</label>
+    <input type="file" id="file" name="file"><br>
+
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time"><br>
+
+    <label for="month">Month:</label>
+    <input type="month" id="month" name="month"><br>
+
+    <label for="week">Week:</label>
+    <input type="week" id="week" name="week"><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" value="example@example.com"><br>
+
+    <!-- Input Restrictions -->
+    <label for="restrictedInput">Restricted Input:</label>
+    <input type="text" id="restrictedInput" name="restrictedInput" disabled readonly size="10" maxlength="5" required value="Restricted"><br>
+
+    <!-- Target Attribute -->
+    <a href="https://www.example.com" target="_blank">Link Opens in New Tab</a><br>
+
+    <!-- I-frames and Marquee -->
+    <iframe src="https://www.example.com" width="400" height="300"></iframe><br>
+
+    <marquee behavior="scroll" direction="left">This is a scrolling text</marquee>
+</body>
+</html>
+
+
